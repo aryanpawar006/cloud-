@@ -2,8 +2,8 @@ name: CI
 on: push
 jobs:
   build:
-  runs-on: ubantu-latest
-  steps:
+    runs-on: ubantu-latest
+    steps:
     - uses: actions/checkout@v4
     - run: echo "build started for $GITHUB_SHA"
     - runs: ls -la
